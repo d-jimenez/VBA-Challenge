@@ -1,73 +1,52 @@
-# VBA Homework - The VBA of Wall Street
+# Stock Market Analysis
 
-## Background
+## Overview
 
-You are well on your way to becoming a programmer and Excel master! In this homework assignment you will use VBA scripting to analyze real stock market data. Depending on your comfort level with VBA, you may choose to challenge yourself with a few of the challenge tasks.
+The Stock Market Analysis project uses Excel Visual Basic for Applications to analyze yearly stock data information. The original data set contains daily stock information for a number of stocks, organized by year. The goal of the VBA script is to loop through the extensive data set, in order to build a summary table that calculates various yearly performance metrics for each stock. 
 
-### Before You Begin
+## Before You Begin
 
-1. Create a new repository for this project called `VBA-challenge`. **Do not add this homework to an existing repository**.
+1. Pull the yearly data set and save as a macro enabled workbook (.xlsm).
 
-2. Inside the new repository that you just created, add any VBA files you use for this assignment. These will be the main scripts to run for each analysis.
+2. Ensure that the developer tab within the excel ribbon has been enabled.
 
-### Files
+## Heads Up
 
-* [Test Data](Resources/alphabetical_testing.xlsx) - Use this while developing your scripts.
+1. The scrip is broken up into zzz major subroutines, each with a different funciton.
 
-* [Stock Data](Resources/Multiple_year_stock_data.xlsx) - Run your scripts on this data to generate the final homework report.
+2. The zzz subroutine calls each of the individual subroutines and runs them as a single macro.
 
-### Stock market analyst
+3. It is important that only the zzz subroutine is played to run, keeping in mind that by running only the zzz subroutine, the rest of the subroutines are called on. 
 
-![stock Market](Images/stockmarket.jpg)
+## Running the Code
 
-## Instructions
+1. Open Excel VBA.
 
-* Create a script that will loop through all the stocks for one year and output the following information.
+2. Select Module 1.
 
-  * The ticker symbol.
+3. Scroll to the subroutine located at the bottom of Module 1, named Sub zzz() and place cursor within subroutine. 
 
-  * Yearly change from opening price at the beginning of a given year to the closing price at the end of that year.
+4. Select the play button within the VBA ribbon.
 
-  * The percent change from opening price at the beginning of a given year to the closing price at the end of that year.
+5. Allow the code to itterate through all of the data as well as each individual worksheet wothin the workbook. Keep in mind that this step may take a large amount of time due to the size of the data sample. 
 
-  * The total stock volume of the stock.
+## Results
 
-* You should also have conditional formatting that will highlight positive change in green and negative change in red.
+The VBA script will ouput a summary table containing the following information for each unique stock symbol:
 
-* The result should look as follows.
-
-![moderate_solution](Images/moderate_solution.png)
-
-## BONUS
-
-* Your solution will also be able to return the stock with the "Greatest % increase", "Greatest % decrease" and "Greatest total volume". The solution will look as follows:
-
-![hard_solution](Images/hard_solution.png)
-
-* Make the appropriate adjustments to your VBA script that will allow it to run on every worksheet, i.e., every year, just by running the VBA script once.
-
-## Other Considerations
-
-* Use the sheet `alphabetical_testing.xlsx` while developing your code. This data set is smaller and will allow you to test faster. Your code should run on this file in less than 3-5 minutes.
-
-* Make sure that the script acts the same on each sheet. The joy of VBA is to take the tediousness out of repetitive task and run over and over again with a click of the button.
-
-* Some assignments, like this one, contain a bonus. It is possible to achieve mastery on this assignment without completing the bonus. The bonus adds an opportunity to further develop you skills and be rewarded extra points for doing so.
-
-## Submission
-
-* To submit please upload the following to Github:
-
-  * A screen shot for each year of your results on the Multi Year Stock Data.
-
-  * VBA Scripts as separate files.
-
-* Ensure you commit regularly to your repository and it contains a README.md file.
-
-* After everything has been saved, create a sharable link and submit that to <https://bootcampspot-v2.com/>.
-
-- - -
-
-### Copyright
-
-Trilogy Education Services © 2020. All Rights Reserved.
+1. The Yearly Change in stock price (Yearly Close Price minus Open Price).
+2. The Percent Change in stock price (Yearly Change divided by Open Price).
+        - Percent Change is formated so than any stock that had a positive percent change is highlighted in green, while those with negative changes are in red.
+3. The Total Stock Volume traded, (Sum of Stock Volumes).
+    
+The bonus material includes: 
+   
+1. The Maximum Percent Change and its associated stock symbol.
+   
+2. The Minimum Percent Change and its associated stock symbol. 
+   
+3. The Largest Stock Volume and its associated stock symbol. 
+   
+4. Thescript also itterates through of of the yearly worksheets within the workbook.
+   
+Screenshots of the results for the first 20 unique stocks are included in the repository.
