@@ -12,25 +12,25 @@ The Stock Market Analysis project uses Excel Visual Basic for Applications to an
 
 ## Heads Up
 
-1. The scrip is broken up into zzz major subroutines, each with a different funciton.
+1. The scrip is broken up into four major subroutines, each with a different funciton.
 
-2. The zzz subroutine calls each of the individual subroutines and runs them as a single macro.
+2. The MultiSheetFullProcess() subroutine calls each of the individual subroutines and runs them as a single macro.
 
-3. It is important that only the zzz subroutine is played to run, keeping in mind that by running only the zzz subroutine, the rest of the subroutines are called on. 
+3. It is important that only the MultiSheetFullProcess() subroutine is played to run, keeping in mind that by running only the zzz subroutine, the rest of the subroutines are called on. 
 
 ## Running the Code
 
-1. Open Excel VBA.
+1. Open the Multiple_year_stock_data.xlsm file and import the VBA script.
 
 2. Select Module 1.
 
-3. Scroll to the subroutine located at the bottom of Module 1, named Sub zzz() and place cursor within subroutine. 
+3. Scroll to the subroutine located at the bottom of Module 1, named Sub MultiSheetFullProcess() and place cursor within subroutine. 
 
 4. Select the play button within the VBA ribbon.
 
-5. Allow the code to itterate through all of the data as well as each individual worksheet wothin the workbook. Keep in mind that this step may take a large amount of time due to the size of the data sample. 
+5. Allow the code to itterate through all of the data as well as each individual worksheet wothin the workbook. After the code is finished running a messagebox will appear stating the ampunt of time it took to run the code.
 
-## Results
+## Output
 
 The VBA script will ouput a summary table containing the following information for each unique stock symbol:
 
@@ -48,5 +48,14 @@ The bonus material includes:
 3. The Largest Stock Volume and its associated stock symbol. 
    
 4. Thescript also itterates through of of the yearly worksheets within the workbook.
+    
+## Brief Results Overview
    
-Screenshots of the results for the first 20 unique stocks are included in the repository.
+1. Bank of America Corp. (BAC) had the largest total stock volume in 2014, 2015 and 2016 with an average stock volume of 23,433,922,066.6667 yearly.
+
+2. The maximum yearly percent stock change  for the 2014, 2015 and 2016 data was for SandRidgeEnergy of 11,675% increasing from $0.20 to $23.75 for the 2016 year.
+
+3. Kinder Morgan Inc. fell by 98.49 percent in 2015, recording the largest percent decrease in stock prices for all stocks in the 2014, 2015 and 2016 data.
+   
+* Screenshots of the results for the first 20 unique stocks for the years are included in the repository.
+
